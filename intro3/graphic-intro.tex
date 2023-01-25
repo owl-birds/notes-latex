@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\begin{document}
+This picture
+\lipsum[1]
+
+Test location
+\begin{figure}[hb] % top of the page
+    \centering
+    \includegraphics[width=0.5\textwidth]{test.png}
+    \caption{An example image}
+\end{figure}
+
+[ht] [h]
+\begin{enumerate}
+    \item h ‘Here’ (if possible)
+    \item t Top of the page
+    \item b Bottom of the page
+    \item p A dedicated page only for floats
+\end{enumerate}
+\begin{center}
+  \includegraphics[height=2cm]{test.png}
+\end{center}
+\begin{center}
+    \includegraphics[width = 0.5\textwidth]{test.png}
+\end{center}
+\begin{center}
+    \includegraphics[height = 0.5\textwidth]{test.png}
+\end{center}
+\begin{center}
+    \includegraphics[clip, trim = 30 30 40 50]{test.png}
+\end{center}
+is an imported PDF.
+\end{document}

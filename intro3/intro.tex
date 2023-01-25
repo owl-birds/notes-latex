@@ -1,0 +1,49 @@
+%\documentclass{article}
+\documentclass[a4paper, 12pt]{article}
+%\documentclass[a4paper, 12pt]{report}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+Hey world!
+Trying to learn latex, myabe it will become usefull in the future
+This is a first document
+
+\textbf{NEW PARAGRAPH}\footnote{footnote}
+WHAT
+
+\section{ITALIC and EMPHASIS}
+some text with \emph{emphasis and \emp{nested} content}
+
+some text in \textit{italic and \textit{nested} content}
+\subsection{subsention of 1: 1.1}
+
+\section{second section}
+second section sentence.
+
+\section{List}
+\subsection{ORDERED}
+\begin{enumerate}
+    \item apple
+    \item mango
+    \item tomato \begin{enumerate}
+    \item apple
+    \item mango
+    \item tomato
+\end{enumerate}
+\end{enumerate}
+
+\subsection{UNORDERED}
+\begin{itemize}
+    \item cat
+    \item dog
+    \item OK \begin{itemize}
+        \item HELLO
+    \end{itemize}
+\end{itemize}
+
+
+\section{report stuffs}
+\paragraph Experiment with different sectioning levels. Try using \documentclass{report} instead of \documentclass{article} and adding \chapter commands. How do they look? Try out \paragraph and (even) f\subparagraph to see they work: by default, they don’t add numbers.
+
+\end{document}
+
