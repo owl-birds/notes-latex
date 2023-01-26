@@ -1,0 +1,39 @@
+\documentclass{book}
+\usepackage[T1]{fontenc}
+%\usepackage{biblatex}
+%\addbibresource{biblatex-examples.bib}
+
+\title{A Sample Book}
+\author{John Doe \and Joe Bloggs}
+
+\IfFileExists{\jobname.run.xml}
+{
+\includeonly{
+  front,
+%  chap1,
+  chap2,
+%  append
+  }
+}
+{
+% Do a full document initially to generate
+% all the aux files
+}
+
+\begin{document}
+\frontmatter
+\include{front}
+
+% =========================
+\mainmatter
+\include{chap1}
+\include{chap2}
+\appendix
+\include{append}
+
+% ========================
+\backmatter
+\printbibliography
+\newpage
+\input{backcover}
+\end{document}

@@ -1,0 +1,44 @@
+\documentclass[a4page, 12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[parfill]{parskip}
+\usepackage{lipsum}
+\usepackage[width = 15cm]{geometry}
+
+\begin{document}
+\section{spacing and fonts}
+\lipsum[1-2]
+
+There are a few places where you use \\ to start a new line without starting a new paragraph:
+
+At the end of table rows
+Inside the center environment
+In poetry (the verse environment)
+
+
+textssssssssssssss \hspace{1cm} more text \hspace{2cm} whattt 
+
+\vspace{5cm}
+
+MOREE TEXT after vertical space
+
+
+Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
+\textsf{sans serif}, \texttt{monospaced} and \textsc{small caps}.
+
+{\itshape
+
+This text is italic.
+
+So it this: the effect is not limited to a paragraph.
+
+}
+
+{\itshape\large Some text\par}
+Normal text
+{\bfseries\small Much smaller text\par}
+
+\tiny tiny text  another tiny text
+
+\huge huge text\par another huge text
+
+\end{document}

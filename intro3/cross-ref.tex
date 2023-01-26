@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{lipsum}
+
+\begin{document}
+    This is a first document - cross ref
+    \section{First Section}
+    \lipsum[1]
+    
+    \subsection{a little bit explanation}
+    The \label command always refers to the previous numbered entity: a section, an equation, a float, etc. That means that \label always has to come after the thing you want to refer to. In particular, when you create floats, the \label has to come after (or better, in), the \caption command, but within the float environment.
+    \label{subsec:1}
+    circumferences
+    \begin{equation}
+        circumferences = 2 \pi r
+        \label{eq:circumferences}
+    \end{equation}
+    %\label{eq:circumferences}
+
+    \subsection{subsection}
+    \label{subsec:labeloneee}
+    
+    below is the formual to find circle area
+    \begin{equation}
+        area = \pi r^{2}    
+        \label{eq:area}
+    \end{equation}
+
+    In subsection~\ref{subsec:labeloneee} is equation~\ref{eq:area}.
+
+    in subsection~\ref{subsec:1} is equation~\ref{eq:circumferences}. ::: will not work not in the begin equation end
+
+\end{document}
