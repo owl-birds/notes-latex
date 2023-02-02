@@ -2,3 +2,6 @@ https://github.com/pixegami/terminal-profile
 // installing linux
 --- rufus to make bootable flashdisk or any storage disk
 --- Pandoc : https://pandoc.org/MANUAL.html
+
+-- archlinux install using docker
+https://www.youtube.com/watch?v=h0Wg_aknGdc&list=LL&index=9
