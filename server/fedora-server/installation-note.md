@@ -1,5 +1,7 @@
 https://docs.fedoraproject.org/pt_BR/fedora-server/installation/
 https://www.youtube.com/watch?v=FxWinfw-HpI
+https://www.linuxcapable.com/increase-dnf-speed-on-fedora-linux/
+
 # requirements
 ### minimum requirement
 - storage space min 5 GiB ::: installed system occupies 2.5 GiB
